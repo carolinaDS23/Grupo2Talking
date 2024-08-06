@@ -8,6 +8,14 @@
     list-style: none;
     text-decoration: none; /*To remove the underline from the "a" tag*/
 }
+
+body{
+
+    background-color: #ebeef1;
+}
+
+
+
 a {
     width: 100%;
     height: 100%;
@@ -16,7 +24,7 @@ a {
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: rgba(0, 0, 0, 0.109);
+background-color: rgb(37, 12, 146);
 padding: 10px 40px;
 }
 
@@ -126,7 +134,7 @@ padding: 10px 40px;
 
 .main .section .post .img-publication img{ 
     height: 100%;
-   max-width: 100%;
+    max-width: 100%;
     object-fit: cover;/*To prevent an image from being deformed and taking up the space established in CSS*/  
 }
  .menu .toggle-input { /*Hide the checkbox */
@@ -137,23 +145,41 @@ padding: 10px 40px;
 }
 
 
-.contact{
+/* Footer */
+.contact {
     display: flex;
-    line-height: 100px;
-    height: 100px;
-    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c4c96;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+.contact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 
+/* Media Query */
+@media (min-width: 768px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
 
+    .contact a {
+        margin: 0 20px;
+    }
 
-
-
-
-
-
-
+    .contact p {
+        margin: 0;
+    }
+}
 
 
 
@@ -164,24 +190,25 @@ padding: 10px 40px;
         margin-right: 20%;
         flex-direction: column;
         width: 73%;
-        background-color: rgba(128, 128, 128, 0.404);
+        background-color: rgba(12, 46, 73, 0.205);
         border-radius: 10px;
     }
     
       .card {
-        border-radius: 6px; /* Borde redondeado para las tarjetas */
+        border-radius: 6px; /* Rounded edge for cards */
         width: 100%;
-        overflow: hidden; /* Evitar que el contenido se desborde fuera de las tarjetas */
-        background: #fff; /* Color de fondo de las tarjetas */
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /* Sombra para las tarjetas */
+        overflow: hidden; /* Prevent content from spilling out of cards*/
+        background: #fff; /* Cards background color */
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /* Shadow for cards */
         overflow: hidden;
         cursor: default;
         padding-bottom: 10px;
-    
+       
       }
       .card .agregar {
         margin-left: 30%;
         padding: 10px;
+        background-color:  rgba(12, 122, 212, 0.219);
     
       }
       .card .nombre h2{
@@ -190,8 +217,8 @@ padding: 10px 40px;
     
       }
       .img-perfiles img {
-        max-width: 100%; /* Imágenes se ajustan al ancho de su contenedor */
-        height: auto; /* Mantener la proporción de aspecto de las imágenes */
+        max-width: 100%; /* Images fit the width of their container */
+        height: auto; /* Maintain the aspect ratio of images */
         width: auto;
     }
     .row{
@@ -201,14 +228,8 @@ padding: 10px 40px;
     gap: 10px;}
     
     
-    
 
-
-
-
-
-
-
+      
 /*---------------COURSES----------------*/
 .courses{
    display: flex;
@@ -222,19 +243,31 @@ padding: 10px 40px;
     gap: 10px;
    
 }
+
+
+.titulo-cursos{
+    
+    margin-top: 20px; 
+    
+
+}
+
 .boton {
     
     width: 100%;
     text-align:center;
-    background-color:#1cb1d2; 
+    background-color:#84b6f4; 
     border-radius: 5px;
     color: aliceblue;
     cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+
   
 }
 
 .boton:hover{
-    background-color: #1b9cba;
+    background-color: #1c4c96;
 
 }
 
@@ -244,18 +277,13 @@ padding: 10px 40px;
 
 
 
-
-
-
-
-
 /*----------------PROFILE----------------*/
 
 .background-image{
     height: 200px; 
     margin-bottom: 150px;
     /* background-image: url("../images/iphone8plusnegro.jpeg"); */
-    background-color: rgba(128, 128, 128, 0.568);
+    background-color: rgba(92, 118, 204, 0.568);
 }
 
 .background-image img{
@@ -268,9 +296,10 @@ padding: 10px 40px;
 .profile-picture {
     text-align: center;
     position: absolute;
-    top: 100px; /* Ajusta la posición vertical según sea necesario */
-    left: 50%; /* Ajusta la posición horizontal según sea necesario */
-    transform: translateX(-50%);
+    top: 100px; /* Adjust the vertical position as necessary */
+    left: 50%; /* Adjust the horizontal position as necessary*/
+    transform: translateX(-50%); 
+   
   
 }
     
@@ -289,6 +318,7 @@ padding: 10px 40px;
 .profile{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 100px;
 }
 
 .personal-information{
@@ -297,8 +327,9 @@ padding: 10px 40px;
     border-radius: 20px;
   
     border: solid 1px rgba(128, 128, 128, 0.527);
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left; /* Align text to the left */
     height: calc(100vh - 380px);
+    margin-top: 100px;
    
 }
 
@@ -307,6 +338,7 @@ padding: 10px 40px;
     display: grid;
     gap:15px;
     padding: 0 20px;
+    margin-top: 100px;
 }
 .container-publication .publication-space{
    border: solid 1px rgba(128, 128, 128, 0.527);
@@ -319,24 +351,28 @@ padding: 10px 40px;
     min-height: 200px;
     padding: 20px;
     border-radius: 20px;
-   
-
-
 }
 
 .container-publication .publication-space .container-img img{
-  
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-
-
 }
+
+
+.titleT {
+    color: aliceblue;
+    
+}
+
+.titulo{
+    padding: 25px;
+    
+}
+
+
+
 /*-----------------MEDIA QUERIES-----------------*/
-
-
-
-
 
 @media (max-width: 650px) {
     .main{
@@ -353,10 +389,6 @@ padding: 10px 40px;
     .main .section .post .img-publication{
         min-height: auto;
     }
-
-
-
-
 
 
 
@@ -408,11 +440,8 @@ padding: 10px 40px;
   }
 
 
-  .contact{
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
+
+  
   /*------------MEET-----------*/
   .container{
     width: 100%;
@@ -435,4 +464,207 @@ padding: 10px 40px;
  }
  
 }
+
+
+
+/*-----------LOGIN-----------*/
+/* General styles for body and html */
+
+  
+  /* Header and animated background styles */
+  .animated-header {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Set the height of the header */
+    overflow: hidden;
+  }
+  
+  .animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: 0; /* Background behind content */
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1; /* Content above background */
+    text-align: center;
+    color: white;
+    padding: 60px 20px; /* Adjust padding for content positioning */
+  }
+  
+  .titleL img {
+    max-width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Keyframes for the background animation */
+  @keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+  }
+  
+  /* Styles for the login container */
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  
+  .login img {
+    max-width: 100px;
+  }
+  
+  .login {
+    text-align: center;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .login-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+  
+    .login img {
+        max-width: 80px;
+    }
+  
+    .btn-info {
+        font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .login-container {
+        margin: 1rem 0.5rem;
+    }
+  
+    .btn-info {
+        font-size: 0.8rem;
+    }
+  }
+  
+  .principal{
+    font-size: 50px;
+  }
+  
+
+
+/* General styles for all devices */
+.login-container {
+    background-color: #f0f0f0; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.login {
+    text-align: center;
+}
+
+
+.login img {
+    max-width: 100px;
+}
+
+/* Media Query for medium to small screens (tablets and large phones) */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .login img {
+        max-width: 80px;
+    }
+
+    .btn-info {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Querymóviles */
+@media (max-width: 576px) {
+    .login-container {
+        margin: 1rem 0.5rem;
+    }
+
+    .btn-info {
+        font-size: 0.8rem;
+    }
+}
+
+
+/*anime header*/ 
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1c4c96;
+}
+
+.title {
+    font-size: 2em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: growShrink 3s infinite;
+}
+
+.speak {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    animation: growShrink 3s infinite;
+}
+
+.perfil {
+    margin-top: 20px;
+}
+
+.img-perfil img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.perfil a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+
 
