@@ -1,11 +1,9 @@
 # Grupo2Talking
 
-# programaciongrupo2
-
-# Proyecto:  TALKING 
+## Proyecto:  TALKING 
 
  ## Tecnologías Utlizadas:
- HTML5, CSS3, Javascript.-
+ HTML5, CSS3, Boostrap, Javascript.-
 
 ## Descripción: 
 El siguiente desarrollo de la web consta de la siguiente manera, es una red social que conecta personas del mundo para el aprendizaje del idioma Inglés, deacuerdo a su nivel de lenguaje elegido, lugar, gustos, etc.- Se adicionan cursos con el fin de afianzar el conocimiento oral-escrito y asi poder adquirir mas confianza a la hora de iniciar una conversación.
@@ -32,7 +30,7 @@ The following website as mentioned above is a social network to connect with peo
 ## Catédra de Práctica 2, Profesor Eduardo Pesce.
 ## Licencia: 
 
-                ------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 #Group programming 2
 Repogroup2
 #proyect: TALKING 
