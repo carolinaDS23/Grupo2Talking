@@ -229,8 +229,43 @@ a {
     .agregar{
          border-radius: 10px 60px 30px;
     }
+
+    @media (max-width: 480px) {
+        .header {
+            flex-direction: column;
+            text-align: center;
+        }
     
+        .title {
+            font-size: 20px;
+        }
     
+        .card {
+            width: 100%;
+        }
+    
+        .meet {
+            width: 100%;
+            padding: 20px;
+        }
+    
+        .card .agregar {
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        .card .nombre h2 {
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        .contact a {
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    
+
 
       
 /*---------------COURSES----------------*/
@@ -761,5 +796,122 @@ img .logo-registro {
         width: 60px; /* Additional adjustment for smaller screens */
         animation: none; /* Disable animation on small screens */
     }
+}
+
+
+/*terminos y condiciones */
+ .body TC{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a33535;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+section p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #a33535;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+.logo-green {
+    width: 50px;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    section p {
+        font-size: 0.9em;
+    }
+
+    .logo-green {
+        width: 40px; 
+    }
+
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    section h2 {
+        font-size: 1em;
+    }
+
+    section p {
+        font-size: 0.8em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-green {
+        width: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+    
 }
 
